@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final E-commerce con javascript - Carrito</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+    <div class="container">
+            <header class="header-mobile">
+                <div class="content">
+                    <div class="menu container">
+                        <h2 class="logo">Carrito</h2>
+                        <!-- <button class="open-menu" id="open-menu"><i class='bx bx-menu'></i></button> -->
+                        <nav class="navbar">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="productos.html">Productos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+    </div>
+
+        <main>
+            <h2 class="titulo"></h2>
+            <div id="contenedor-productos" class="contenedor-carrito disabled">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio</p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                   <div class="carrito-producto">
+                    <img class="carrito-producto-imagen" src="./img/productosCremosos/basesParaRostro.img.jpg" alt="">
+                    <div class="carrito-producto-nombre">
+                        <small>Titulo</small>
+                        <h3>Base de maquillaje</h3>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$5.800</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p></p>
+                    </div>
+                    <button class="producto-carrito-eliminar"><i class='bx bxs-trash-alt cart-remove'></i></button>
+                   </div>
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="vaciar-carrito">
+                        <button id="carrito-vaciar" class="vaciar">Vaciar</button>
+                    </div>
+                    <div class="total-carrito">
+                        <div class="total">
+                            <p>Total</p>
+                            <p id="total">$5.800</p>
+                        </div>
+                        <button id="carrito-comprar" class="comprar disabled">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="pie-pagina">
+            <div class="derechos-autor">
+                <small>Copyright<b>Beauty Store</b> - Todos los derechos reservados</small>
+            </div>
+        </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final E-commerce con javascript</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script defer src="index.js"></script> -->
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <div class="nav container">
+            <!-- logo -->
+                <a href="#" class="logo">E-commerce</a>
+            <!-- cart icon -->
+            <i><i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Tu Carrito</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="./img/productosCremosos/basesParaRostro.img.jpg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Producto Base</div>
+                            <div class="cart-price">$5.800</div>
+                            <input type="number" name="" id="" value="1" class="cart-quantity">
+                        </div>
+                        <!-- remover item -->
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+                    </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button type="button" class="btn-comprar">Comprar</button>
+                <!-- close icon -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Productos -->
+    <section class="shop container">
+        <h2 class="section-title">Productos</h2>
+        <!-- Contenido de la tienda -->
+        <div class="shop-content">
+            <!-- box 1 -->
+            <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/basesParaRostro.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Base de maquillaje</a>
+                <span class="price">$5.800</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 2 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/correctorDeOjeras.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Corrector de ojeras</a>
+                <span class="price">$4.600</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 3 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/contornoDeRostroEnCrema.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Contorno de rostro en crema</a>
+                <span class="price">$6.000</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 4 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/polvoCompacto.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Polvo compacto</a>
+                <span class="price">$3.600</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 5 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/bronceadoresEnPolvo.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Bronceador</a>
+                <span class="price">$3.700</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 6 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/rubor.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Rubor liquido</a>
+                <span class="price">$3.400</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 7 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/cuartetosDeSombras.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Cuarteto de sombras</a>
+                <span class="price">$6.200</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 8 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/paletaDeSombrasParaRostro.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Paleta de sombras para rostro</a>
+                <span class="price">$6.500</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 9 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/paletasDeSombras.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Paleta de sombras</a>
+                <span class="price">$6.600</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 10 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosEnPolvo/paletaDeSombrasProfecional.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Paleta de sombras profecional</a>
+                <span class="price">$6.900</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 11 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/labiales.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Labiales</a>
+                <span class="price">$2.900</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 12 -->
+             <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/mascaraDePestanias.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Mascara de pestañas</a>
+                <span class="price">$3.200</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <!-- box 13 -->
+            <div class="product-box">
+                <figure>
+                    <img src="./img/productosCremosos/delineadorDeOjos.img.jpg" alt="" class="product-img">
+                </figure>
+                <a href="productos.html" class="product-title">Delineador de ojos</a>
+                <span class="price">$2.600</span>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-style">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="" alt="logo de la pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga non quidem odit! Quidem vitae voluptatum quia in veritatis iste harum aspernatur praesentium alias temporibus, exercitationem cumque provident itaque corporis optio.</p>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class='bx bxl-facebook-square'></a>
+                    <a href="#" class='bx bxl-instagram'></a>
+                    <a href="#" class='bx bxl-twitter'></a>
+                    <a href="#" class='bx bxl-gmail'></a>
+                </div>
+            </div>
+        </div>
+        <div class="derechos-autor">
+            <small>Copyright<b>Beauty Store</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
